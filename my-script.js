@@ -93,14 +93,27 @@
 // let currentVisitor = "Guest";
 // console.log(currentVisitor);
 
-const BIRTHDAY = "18.04.2009";
-const AGE = someCode(BIRTHDAY);
+// const BIRTHDAY = "18.04.2009";
+// const AGE = someCode(BIRTHDAY);
 
-function someCode(birthday) {
-  const birthDate = new Date(birthday.split('.').reverse().join('-'));
-  const ageDifMs = Date.now() - birthDate.getTime();
-  const ageDate = new Date(ageDifMs);
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
-}
+// function someCode(birthday) {
+//   const birthDate = new Date(birthday.split('.').reverse().join('-'));
+//   const ageDifMs = Date.now() - birthDate.getTime();
+//   const ageDate = new Date(ageDifMs);
+//   return Math.abs(ageDate.getUTCFullYear() - 1970);
+// }
 
-console.log(AGE);
+// console.log(AGE);
+
+
+// let a = 100,
+// b = 50;
+// let x = a + b;
+
+// console.log(x);
+
+
+let x = 100 / 50 *3;
+
+
+console.log(x);
