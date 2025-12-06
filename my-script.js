@@ -121,8 +121,18 @@
 // console.log(result);
 
 
-let x = "100";
-let y = "10";
-let z = x + y;
+// let x = NaN;
+// let y = "5";
+// let z = x + y;
 
-console.log(z);
+// console.log(z);
+
+
+// Infinity Loop
+
+let myNumber = 2;
+
+while (myNumber != Infinity){
+    myNumber = myNumber * myNumber;
+    console.log(myNumber);
+}
