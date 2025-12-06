@@ -41,3 +41,66 @@
 // const percentage = actual / max;
 
 // console.log(percentage);
+
+// let user = 'John',
+// age = 25;
+// let message ='Hello';
+
+// // alert(message + " " +user +", "+ age);
+// // console.log(message + " " +user +", "+ age);
+// alert(user);
+// alert(message);
+
+
+// let $ = 1;
+// let _ = 2;
+
+// console.log($ + _);
+
+
+// UPPER CASE CONSTANTS
+
+// const COLOR_RED = "#F00";
+// const COLOR_GREEN = "#0F0";
+// const COLOR_BLUE = "#00F";
+// const COLOR_ORANGE = "#FF7F00";
+
+// let color = COLOR_RED;
+// console.log(color);
+
+
+// TASKS
+
+// let admin,
+// name ="John";
+// admin = name;
+
+// alert(admin);
+
+
+// const PLANET_MERCURY = "Mercury";
+// const PLANET_VENUS = "Venus";
+// const PLANET_EARTH = "Earth";
+// const PLANET_MARS = "Mars";
+// const PLANET_JUPITER = "Jupiter";
+// const PLANET_SATURN = "Saturn";
+// const PLANET_URANUS = "Uranus";
+// const PLANET_NEPTUNE = "Neptune";
+
+// let currentPlanet = PLANET_EARTH;
+// console.log(currentPlanet);
+
+// let currentVisitor = "Guest";
+// console.log(currentVisitor);
+
+const BIRTHDAY = "18.04.2009";
+const AGE = someCode(BIRTHDAY);
+
+function someCode(birthday) {
+  const birthDate = new Date(birthday.split('.').reverse().join('-'));
+  const ageDifMs = Date.now() - birthDate.getTime();
+  const ageDate = new Date(ageDifMs);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+console.log(AGE);
