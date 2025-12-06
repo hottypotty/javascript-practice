@@ -113,7 +113,16 @@
 // console.log(x);
 
 
-let x = 100 / 50 *3;
+// let x = 10;
+// let y = 20;
+// let z = "30";
+// let result = x + y + z;
+
+// console.log(result);
 
 
-console.log(x);
+let x = "100";
+let y = "10";
+let z = x + y;
+
+console.log(z);
