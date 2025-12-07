@@ -9,20 +9,28 @@
 
 <body>
 
-    <p id="demo"></p>
+
+<canvas id="canvas" width="400" height="200" >
+
+</canvas>
+
+<script>
+    const canvas = document.getElementById("canvas");
+    const para = document.querySelector("p");
+    const ctx = canvas.getContext("2d");
+
+    //  Edit the following two lines ONLY
+    let x = 100;
+    let y = 100;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+    ctx.fillStyle = "green"; // Set the fill color to green
+    ctx.fillRect(10,10,x,y); // Draw a filled rectangle
+    para.textContent = `The rectangle is ${x}px wide and ${y}px high.`;
 
 
 
-    <script>
-
-        let x = 3;
-        let y = 4;
-        x *= y;
-        document.getElementById("demo").innerHTML = x;
-
-
-
-    </script>
+</script>
 
 
 
