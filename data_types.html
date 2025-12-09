@@ -9,14 +9,17 @@
 
 <body>
 
-    <p id="demo"></p>
+<p id="demo"></p>
 
     <script>
-        let name = "Ilya";
 
-        document.getElementById("demo").innerHTML = (`hello ${1}`);
-        document.getElementById("demo").innerHTML = (`hello ${"name"}`);
-         document.getElementById("demo").innerHTML = (`hello ${name}`);
+        const song = "Fight the Youth";
+        const score = 9;
+        const highestScore = 10;
+        const output = `"I like the song ${song}. I gave it a score of ${(score / highestScore) * 100}%."`;
+        console.log(typeof output);
+
+        document.getElementById("demo").innerHTML = (output);
     </script>
 </body>
 
