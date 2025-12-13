@@ -13,12 +13,28 @@
 
     <script>
 
-        let text = "I love cats. Cats are very easy to love.Cats are very popular.";
-        text = text.replaceAll("Cats","Dogs");
-        text = text.replaceAll("cats","dogs");
-        
 
-        document.getElementById("demo").innerHTML =(text);
+       
+
+
+      
+
+    </script>
+
+
+
+    <script>
+        const string1 = "A string primitive";
+        const string2 = 'Also a string primitive';
+        const string3 = `Yet another string primitive`;
+        const string4 = new String("A String object");
+        
+        console.log(typeof string1);
+        console.log(typeof string2);
+        console.log(typeof string3);
+        console.log( string4);
+
+          document.getElementById("demo").innerHTML =  (string4);
 
     </script>
 </body>
